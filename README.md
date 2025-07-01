@@ -8,5 +8,4 @@
 - 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/shahmeer-nasir-063b71179/), [Email Shahmeer](mailto:shahmeernasirr@gmail.com).
 - ⚡ Fun fact: I make flavored soda drinks 🥤.
 
-### Communicating using Markdown language
 [See live](https://exp-communicate-using-markdown-cohort-1.github.io/series-communicate-using-markdown-Shahmeer-Nasir/)
