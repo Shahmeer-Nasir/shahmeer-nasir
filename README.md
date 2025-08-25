@@ -1,11 +1,25 @@
-### Hi there 👋
-#### It's Shahmeer, a Front-end web developer with a keen interest in Reactjs and Nextjs.
+# next-template
 
-- 🔭 I work on front-end web technologies like ReactJS and NextJS with prior skills in HTML5, CSS3, and JavaScript ES6.
-- 🌱 I’m currently learning Full stack development (MERN).
-- 👯 I’m looking to collaborate on front-end web technologies applying AI.
-- 💬 Ask me about Computer Science.
-- 📫 How to reach me: [LinkedIn](https://www.linkedin.com/in/shahmeer-nasir-063b71179/), [Email Shahmeer](mailto:shahmeernasirr@gmail.com).
-- ⚡ Fun fact: I make flavored soda drinks 🥤.
+> **Warning**
+> This template is deprecated. You can now create a new Next.js project using the shadcn CLI: `npx shadcn init`.
 
-[See live](https://exp-communicate-using-markdown-cohort-1.github.io/series-communicate-using-markdown-Shahmeer-Nasir/)
+A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+
+## Usage
+
+```bash
+npx create-next-app -e https://github.com/shadcn/next-template
+```
+
+## Features
+
+- Next.js 13 App Directory
+- Radix UI Primitives
+- Tailwind CSS
+- Icons from [Lucide](https://lucide.dev)
+- Dark mode with `next-themes`
+- Tailwind CSS class sorting, merging and linting.
+
+## License
+
+Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
