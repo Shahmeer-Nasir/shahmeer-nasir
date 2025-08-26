@@ -25,11 +25,10 @@ interface CarouselCompProps {
 
 function CarouselComp({ projects }: CarouselCompProps) {
   return (
-    <Carousel className="w-full max-w-4xl">
-      <CarouselContent>
+    <Carousel className="w-full">
+      <CarouselContent className="-ml-[3rem]">
         {projects.map((project) => (
-          <CarouselItem key={project.id} className="h-auto md:basis-1/2 lg:basis-1/3">
-            {/* <div className="p-4"> */}
+          <CarouselItem key={project.id} className="pl-[3rem] h-auto md:basis-1/2 lg:basis-1/3">
               <Link
                 href={project.link}
                 target="_blank"
@@ -54,7 +53,6 @@ function CarouselComp({ projects }: CarouselCompProps) {
                   ))}
                 </div>
               </Link>
-            {/* </div> */}
           </CarouselItem>
         ))}
       </CarouselContent>

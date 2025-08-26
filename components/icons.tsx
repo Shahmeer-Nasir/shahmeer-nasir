@@ -32,4 +32,50 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  blob: (props: LucideProps) => (
+    <svg
+      {...props}
+      viewBox="0 0 800 600"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stopColor="#FF7A3D" />
+          <stop offset="100%" stopColor="#FF5318" />
+        </linearGradient>
+        <filter id="blur">
+          <feGaussianBlur stdDeviation="25" />
+        </filter>
+      </defs>
+      <g opacity="0.2" filter="url(#blur)">
+        <path d="M120,420 C80,330 140,180 290,140 C420,105 540,120 640,210 C720,280 700,380 600,440 C520,490 380,520 260,500 C200,490 150,470 120,420 Z" fill="#FF5318" />
+      </g>
+      <path d="M120,420 C80,330 140,180 290,140 C420,105 540,120 640,210 C720,280 700,380 600,440 C520,490 380,520 260,500 C200,490 150,470 120,420 Z" fill="url(#grad)" />
+    </svg>
+  ),
+  blob2: (props: LucideProps) => (
+    <svg
+      {...props}
+      viewBox="0 0 800 600"
+      aria-hidden="true"
+      focusable="false"
+    >
+      <defs>
+        <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stopColor="#FF7A3D" />
+          <stop offset="100%" stopColor="#FF5318" />
+        </linearGradient>
+        <filter id="blur">
+          <feGaussianBlur stdDeviation="25" />
+        </filter>
+      </defs>
+
+      <g opacity="0.2" filter="url(#blur)">
+        <path d="M300,100 C380,60 500,80 580,150 C660,220 700,320 640,400 C580,480 440,500 330,470 C220,440 120,340 160,240 C190,160 240,120 300,100 Z" fill="#FF5318" />
+      </g>
+
+      <path d="M300,100 C380,60 500,80 580,150 C660,220 700,320 640,400 C580,480 440,500 330,470 C220,440 120,340 160,240 C190,160 240,120 300,100 Z" fill="url(#grad)" />
+    </svg>
+  ),
 }
