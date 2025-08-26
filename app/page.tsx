@@ -14,8 +14,7 @@ export default function IndexPage() {
        >
         <div className="flex max-w-[980px] flex-col items-start gap-2">
           <h1 className="text-3xl font-extrabold leading-tight  md:text-4xl">
-            Not your ordinary vibe-coder <br className="hidden sm:inline" />
-            Turning ideas into live links.
+            Turning ideas into live <Link href="/#projects" className="text-orange-400 underline underline-offset-[0.25rem] transition-all hover:underline-offset-[0.5rem]">links</Link>.
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground">
             A Full-stack developer having an extensive range of skillset.
