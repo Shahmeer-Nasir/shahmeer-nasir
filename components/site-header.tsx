@@ -29,7 +29,7 @@ export function SiteHeader() {
               </div>
             </Link>
             <Link
-              href={siteConfig.links.twitter}
+              href={siteConfig.links.linkedin}
               target="_blank"
               rel="noreferrer"
             >
@@ -39,8 +39,23 @@ export function SiteHeader() {
                   variant: "ghost",
                 })}
               >
-                <Icons.twitter className="h-5 w-5 fill-current" />
-                <span className="sr-only">Twitter</span>
+                <Icons.linkedin className="h-5 w-5" />
+                <span className="sr-only">LinkedIn</span>
+              </div>
+            </Link>
+            <Link
+              href={siteConfig.links.codepen}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div
+                className={buttonVariants({
+                  size: "icon",
+                  variant: "ghost",
+                })}
+              >
+                <Icons.codepen className="h-5 w-5" />
+                <span className="sr-only">Codepen</span>
               </div>
             </Link>
             <ThemeToggle />

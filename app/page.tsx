@@ -1,39 +1,118 @@
 import Link from "next/link"
 
 import { siteConfig } from "@/config/site"
-import { buttonVariants } from "@/components/ui/button"
+import { Button, buttonVariants } from "@/components/ui/button"
+import CarouselComp from "@/components/carousel"
 
 export default function IndexPage() {
   return (
-    <section className="container grid items-center gap-6 pb-8 pt-6 md:py-10">
-      <div className="flex max-w-[980px] flex-col items-start gap-2">
-        <h1 className="text-3xl font-extrabold leading-tight tracking-tighter md:text-4xl">
-          Beautifully designed components <br className="hidden sm:inline" />
-          built with Radix UI and Tailwind CSS.
-        </h1>
-        <p className="max-w-[700px] text-lg text-muted-foreground">
-          Accessible and customizable components that you can copy and paste
-          into your apps. Free. Open Source. And Next.js 13 Ready.
-        </p>
-      </div>
-      <div className="flex gap-4">
-        <Link
-          href={siteConfig.links.docs}
-          target="_blank"
-          rel="noreferrer"
-          className={buttonVariants()}
-        >
-          Documentation
-        </Link>
-        <Link
-          target="_blank"
-          rel="noreferrer"
-          href={siteConfig.links.github}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          GitHub
-        </Link>
-      </div>
-    </section>
+    <main className="container">
+             <section
+         id="about"
+         className="grid items-center justify-center min-h-96 pb-8 pt-6 md:py-10"
+         role="banner"
+       >
+        <div className="flex max-w-[980px] flex-col items-start gap-2">
+          <h1 className="text-3xl font-extrabold leading-tight  md:text-4xl">
+            Not your ordinary vibe-coder <br className="hidden sm:inline" />
+            Turning ideas into live links.
+          </h1>
+          <p className="max-w-[700px] text-lg text-muted-foreground">
+            A Full-stack developer having an extensive range of skillset.
+          </p>
+        </div>
+        <div className="flex justify-center">
+          <Link
+            target=""
+            rel="noreferrer"
+            href={siteConfig.links.email}
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Lets Talk
+          </Link>
+        </div>
+      </section>
+             <section
+         id="projects"
+         className=" grid items-center justify-center gap-10 pb-8 pt-6 md:py-10"
+         role="carousel"
+       >
+        <div className="flex max-w-4xl flex-col items-center gap-2">
+          <h1 className="text-3xl text-center font-extrabold leading-tight tracking-tighter md:text-4xl">
+            Projects
+          </h1>
+        </div>
+        <div className="flex flex-col items-center gap-8">
+          <CarouselComp projects={siteConfig.projects} />
+          <Button className="w-fit" variant="outline">Show More</Button>
+        </div>
+      </section>
+             {/* Contact Section */}
+       <section
+         id="contact"
+         className="grid items-center justify-center gap-10 pb-8 pt-6 md:py-10"
+         role="contact"
+       >
+         <div className="flex max-w-4xl flex-col items-center gap-2">
+           <h1 className="text-3xl text-center font-extrabold leading-tight tracking-tighter md:text-4xl">
+             Get In Touch
+           </h1>
+           <p className="max-w-[700px] text-center text-lg text-muted-foreground">
+             Let's work together! Feel free to reach out through any of these channels.
+           </p>
+         </div>
+         <div className="flex flex-col items-center gap-8">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-2xl">
+             {/* Email */}
+             <Link
+               href={siteConfig.links.email}
+               className="flex flex-col items-center gap-3 p-6 rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md hover:scale-105"
+             >
+               <span className="text-4xl">📧</span>
+               <h3 className="font-semibold">Email</h3>
+               <p className="text-sm text-muted-foreground text-center">shahmeernasirr@gmail.com</p>
+             </Link>
+             
+             {/* GitHub */}
+             <Link
+               href={siteConfig.links.github}
+               target="_blank"
+               rel="noreferrer"
+               className="flex flex-col items-center gap-3 p-6 rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md hover:scale-105"
+             >
+               <span className="text-4xl">💻</span>
+               <h3 className="font-semibold">GitHub</h3>
+               <p className="text-sm text-muted-foreground text-center">@shahmeer-nasir</p>
+             </Link>
+             
+             {/* LinkedIn */}
+             <Link
+               href={siteConfig.links.linkedin}
+               target="_blank"
+               rel="noreferrer"
+               className="flex flex-col items-center gap-3 p-6 rounded-lg border bg-card text-card-foreground shadow-sm transition-all hover:shadow-md hover:scale-105"
+             >
+               <span className="text-4xl">💼</span>
+               <h3 className="font-semibold">LinkedIn</h3>
+               <p className="text-sm text-muted-foreground text-center">shahmeer-nasir</p>
+             </Link>
+           </div>
+           
+           <div className="flex flex-col items-center gap-4">
+             <p className="text-sm text-muted-foreground text-center">
+               Available for freelance opportunities and full-time positions
+             </p>
+             <Link href={siteConfig.links.email}>
+               <Button 
+                 className="w-fit"
+                 variant="outline"
+               >
+                 Start a Conversation
+               </Button>
+             </Link>
+           </div>
+         </div>
+       </section>
+    </main>
   )
 }
