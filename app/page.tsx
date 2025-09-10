@@ -3,6 +3,7 @@ import Link from "next/link"
 import { siteConfig } from "@/config/site"
 import { Button, buttonVariants } from "@/components/ui/button"
 import CarouselComp from "@/components/carousel"
+import { Icons } from "@/components/icons"
 
 export default function IndexPage() {
   return (
@@ -13,12 +14,16 @@ export default function IndexPage() {
         role="banner"
       >
         <div className="flex max-w-[980px] flex-col items-start gap-2">
+          <p className="text-2xl">Hi</p>
           <p className="text-orange-300">People call me</p>
           <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">
-            Shahmeer Nasir<span className="text-orange-400">.</span>
+            Shahmeer Nasir<span className="">.</span>
           </h1>
+          <h2 className="text-2xl font-extrabold leading-tight md:text-3xl text-muted-foreground">
+            I like coding and building stuff 😃
+          </h2>
           <p className="max-w-[700px] text-lg text-muted-foreground">
-            I am full-stack developer with a passion for learning and coding.
+            I am a full-stack developer with a passion for learning and coding modern web technologies.
           </p>
           <Link
             rel="noreferrer"
@@ -26,6 +31,7 @@ export default function IndexPage() {
             className={`${buttonVariants({ size: "lg" })} mt-6`}
           >
             See my work
+            <Icons.downArrow className="mt-[0.1rem] group-hover:animate-bounce" />
           </Link>
         </div>
         <div className="flex justify-center">
@@ -110,10 +116,12 @@ export default function IndexPage() {
             <p className="text-center text-sm text-muted-foreground">
               Available for freelance opportunities and full-time positions
             </p>
-            <Link href={siteConfig.links.email}>
-              <Button className="w-fit" variant="outline">
+            <Link
+              href={siteConfig.links.email}
+              rel="noreferrer"
+              className={`${buttonVariants({ size: "lg" })} mt-6`}
+              >
                 Start a Conversation
-              </Button>
             </Link>
           </div>
         </div>

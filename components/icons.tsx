@@ -32,4 +32,9 @@ export const Icons = {
       ></path>
     </svg>
   ),
+  downArrow: (props: LucideProps) => (
+    <svg viewBox="0 0 20 20" {...props}>
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 4v12m0 0l-6-6m6 6l6-6" />
+    </svg>
+  ),
 }
