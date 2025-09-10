@@ -9,33 +9,26 @@ export default function IndexPage() {
     <main className="container">
       <section
         id="about"
-        className="grid min-h-96 items-center justify-center pb-8 pt-6 md:py-10"
+        className="grid items-center justify-center pb-8 pt-6 md:py-16"
         role="banner"
       >
         <div className="flex max-w-[980px] flex-col items-start gap-2">
-          <h1 className="text-3xl font-extrabold leading-tight  md:text-4xl">
-            Turning ideas into live{" "}
-            <Link
-              href="/#projects"
-              className="text-orange-400 underline underline-offset-[0.25rem] transition-all hover:underline-offset-[0.5rem]"
-            >
-              links
-            </Link>
-            .
+          <p className="text-orange-300">People call me</p>
+          <h1 className="text-3xl font-extrabold leading-tight md:text-4xl">
+            Shahmeer Nasir<span className="text-orange-400">.</span>
           </h1>
           <p className="max-w-[700px] text-lg text-muted-foreground">
-            A Full-stack developer having an extensive range of skillset.
+            I am full-stack developer with a passion for learning and coding.
           </p>
+          <Link
+            rel="noreferrer"
+            href={"#projects"}
+            className={`${buttonVariants({ size: "lg" })} mt-6`}
+          >
+            See my work
+          </Link>
         </div>
         <div className="flex justify-center">
-          <Link
-            target=""
-            rel="noreferrer"
-            href={siteConfig.links.email}
-            className={buttonVariants({ variant: "outline" })}
-          >
-            Let&apos;s Talk
-          </Link>
         </div>
       </section>
       <section
