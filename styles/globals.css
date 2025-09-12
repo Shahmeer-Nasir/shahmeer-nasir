@@ -4,6 +4,12 @@
 
 
 @layer base {
+  section {
+    @apply py-12 md:py-14 xl:py-16;
+  }
+  h2 {
+    @apply text-3xl font-extrabold md:text-4xl;
+  }
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14.3% 4.1%;
